@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines character encoding and responsive viewport scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - College Club Hub</title>
+    <!-- Links the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section: Uses Flexbox to align the college brand on the left and navigation links on the right -->
+    <header>
+        <div class="logo-box">
+            <img src="logo.jpeg" alt="College Logo" class="logo">
+            <div>
+                <p class="college-name">SITARE UNIVERSITY</p>
+                <h2 class="hub-title">COLLEGE CLUB HUB</h2>
+            </div>
+        </div>
+
+        <!-- Navigation Bar: Provides links to switch between different pages -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="club.html">Clubs</a>
+            <a href="Contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <p class="small-title">--- GET IN TOUCH ---</p>
+        <h2 class="section-heading">College Contact &amp; Club Coordinators</h2>
+        <p class="section-sub">Have questions about joining a club or organizing an event? Reach out to our official welfare office or club coordinators.</p>
+
+        <!-- Official College Contact Information Banner -->
+        <div class="info-box" style="margin-bottom: 50px;">
+            <h3>🏛️ Official College Student Welfare Office</h3>
+            <p>📍 <strong>Campus Address:</strong> Sitare University, Shri Ramswaroop Memorial University (SRMU) Campus, Lucknow-Deva Road, Uttar Pradesh</p>
+            <p>📧 <strong>Official Email:</strong> clubhub@sitare.org &nbsp;|&nbsp; 🌐 <strong>Website:</strong> www.sitare.org</p>
+            <p>📞 <strong>Student Helpline Desk:</strong> +91 522-2789000 (Monday to Saturday: 9:00 AM – 5:00 PM)</p>
+        </div>
+
+        <!-- Coordinators Grid: Displays contact details, venue, and office hours for all 6 club coordinators -->
+        <h2 class="section-heading" style="margin-bottom: 30px;">👨‍🏫 All 6 Club Coordinators</h2>
+
+        <div class="grid-box">
+            <div class="card">
+                <span class="badge">CODING CLUB</span>
+                <h3>Sweta &amp; Team</h3>
+                <p><strong>Role:</strong> Coding Club Coordinator</p>
+                <p>📧 codingclub@college.edu</p>
+                <p>📞 +91 91234 56780</p>
+                <p>📍 <strong>Venue:</strong> Computer Lab 1, 2nd Floor</p>
+                <p>🕒 <strong>Office Hours:</strong> Fri, 4:00 PM – 6:00 PM</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">MUSIC CLUB</span>
+                <h3>Rohan Mehta</h3>
+                <p><strong>Role:</strong> Music Club Coordinator</p>
+                <p>📧 musicclub@college.edu</p>
+                <p>📞 +91 93456 78912</p>
+                <p>📍 <strong>Venue:</strong> Music &amp; Jamming Room, SAC</p>
+                <p>🕒 <strong>Office Hours:</strong> Sat, 3:00 PM – 5:30 PM</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">DRAMA CLUB</span>
+                <h3>Priya Verma</h3>
+                <p><strong>Role:</strong> Drama &amp; Theater Coordinator</p>
+                <p>📧 dramaclub@college.edu</p>
+                <p>📞 +91 94567 89123</p>
+                <p>📍 <strong>Venue:</strong> Main Auditorium Hall</p>
+                <p>🕒 <strong>Office Hours:</strong> Thu, 5:00 PM – 7:00 PM</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">SPORTS CLUB</span>
+                <h3>Rohit Singh</h3>
+                <p><strong>Role:</strong> Sports Club Captain</p>
+                <p>📧 sportsclub@college.edu</p>
+                <p>📞 +91 95678 91234</p>
+                <p>📍 <strong>Venue:</strong> College Sports Complex</p>
+                <p>🕒 <strong>Office Hours:</strong> Daily, 5:30 PM – 7:30 PM</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">DEBATE CLUB</span>
+                <h3>Ananya Sharma</h3>
+                <p><strong>Role:</strong> Debate &amp; Literary Lead</p>
+                <p>📧 debateclub@college.edu</p>
+                <p>📞 +91 96789 12345</p>
+                <p>📍 <strong>Venue:</strong> Seminar Hall 2, Academic Block</p>
+                <p>🕒 <strong>Office Hours:</strong> Tue, 4:00 PM – 5:30 PM</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">ART &amp; CRAFT CLUB</span>
+                <h3>Sneha Kapoor</h3>
+                <p><strong>Role:</strong> Fine Arts &amp; Craft Lead</p>
+                <p>📧 artcraft@college.edu</p>
+                <p>📞 +91 97890 23456</p>
+                <p>📍 <strong>Venue:</strong> Creative Studio, Ground Floor</p>
+                <p>🕒 <strong>Office Hours:</strong> Sat, 2:00 PM – 4:30 PM</p>
+            </div>
+        </div>
+
+        <!-- Student Registration Form: Uses HTML5 form validation ('required') and onsubmit event handler -->
+        <div id="join-form" style="margin-top: 70px;">
+            <p class="small-title">--- STUDENT REGISTRATION ---</p>
+            <h2 class="section-heading">Join a Club / Event Registration Form</h2>
+            <p class="section-sub">Fill out your details below to register as a club member or sign up for upcoming workshops.</p>
+
+            <!-- onsubmit shows a confirmation alert, clears form fields via this.reset(), and prevents page reload -->
+            <form class="registration-form" onsubmit="alert('🎉 Thank you for registering! The club coordinator will contact you soon.'); this.reset(); return false;">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>College Email ID *</label>
+                    <input type="email" placeholder="example@sitare.org" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Branch &amp; Semester *</label>
+                    <input type="text" placeholder="e.g., B.Tech CS - Semester 1" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Club to Join *</label>
+                    <select required>
+                        <option value="">-- Choose a Club --</option>
+                        <option value="Coding Club">💻 Coding Club</option>
+                        <option value="Music Club">🎸 Music Club</option>
+                        <option value="Drama Club">🎭 Drama Club</option>
+                        <option value="Sports Club">⚽ Sports Club</option>
+                        <option value="Debate Club">🎙️ Debate Club</option>
+                        <option value="Art & Craft Club">🎨 Art &amp; Craft Club</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Why do you want to join this club? (Optional)</label>
+                    <textarea rows="4" placeholder="Share your interests, skills, or project ideas..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%;">Submit Registration →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section: Displays attractive campus motto badges and copyright information -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>SITARE UNIVERSITY - COLLEGE CLUB HUB</h3>
+                <p>Empowering students to learn, innovate, and lead beyond classrooms.</p>
+            </div>
+            <div class="footer-highlights">
+                <span class="footer-pill">🚀 Learn • Build • Lead</span>
+                <span class="footer-pill">📍 Shri Ramswaroop Memorial University, Lucknow</span>
+            </div>
+        </div>
+        <p class="copyright">© 2026 College Club Hub | Sitare University | Designed by Sweta &amp; Team</p>
+    </footer>
+
+</body>
+</html>
